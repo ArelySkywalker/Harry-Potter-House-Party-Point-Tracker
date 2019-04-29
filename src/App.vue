@@ -1,23 +1,48 @@
 <template>
   <div id="app">
-    <b-jumbotron header="BootstrapVue" lead="Bootstrap 4 Components for Vue.js 2">
-      <p>For more information visit website</p>
-      <b-button variant="primary" href="#">More Info</b-button>
-    </b-jumbotron>
+    <Header />
+    <Houses />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
+import Houses from "./components/Houses.vue";
+import Footer from "./components/Footer.vue";
+
 export default {
   name: 'app',
   data () {
     return {
-      
+      house: {
+        
+      }
     }
+  },
+  created(){
+    // eventBus.$on('activateTool', (activeTool) => {
+    //   this.activeTool = activeTool;
+    // });
+  },
+  methods: {
+
+  },
+  components: {
+    Header,
+    Houses,
+    Footer
   }
 }
 </script>
 
 <style>
+
+body,
+html { 
+  min-height: 100%;
+  background-color: #111111;
+  font-size: 16px;
+}
 
 </style>
