@@ -1,0 +1,6 @@
+# This gitignore is used to keep this directory, but hide all files from the repo
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
