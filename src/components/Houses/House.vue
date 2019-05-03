@@ -12,16 +12,11 @@
 
 			<b-card-img :src="house.gif" :alt="house.name" top></b-card-img>
 			<b-card-body>
-				<b-card-title>{{Math.floor(Math.random() * 100)}} Points</b-card-title>
-				<b-card-text :style="{color: house.colors.secondary }">{{numPlayers}} Members</b-card-text>
+				<b-card-title>{{housePoints}} Points</b-card-title>
+				<b-card-text :style="{color: house.colors.secondary }">{{this.house.players.length}} Members</b-card-text>
 
 				<ul class="list-unstyled text-left mt-5">
-					<b-media tag="li" v-for="index in numPlayers" :key="index" class="mb-1">
-						<b-img slot="aside" blank blank-color="#abc" width="64" alt="placeholder"></b-img>
-
-						<h5 class="mt-0 mb-1">{{index}}. {{randomName()}}</h5>
-						<p :style="{color: house.colors.secondary }">{{Math.floor(Math.random() * 10)}} points</p>
-					</b-media>
+					<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
 				</ul>
 			</b-card-body>
 
@@ -30,22 +25,32 @@
 </template>
 
 <script>
-
+import Player from "./Player.vue";
 
 export default {
 	props: ['house'],
 	data () {
 		return {
-			numPlayers: Math.floor(Math.random() * 10) + 1
+			
 		}
 	},
 	methods:{
-		randomName(){
-			return Math.random().toString(36).substring((Math.floor(Math.random() * 10)))
+
+	},
+	computed: {
+		//This computed method will watch its dependencies (ie: this.house.players) and only recalculate when this changes
+		//This is a micro opimization in this case, but used for practice
+		housePoints: function () {
+			let points = 0;
+			this.house.players.forEach(function (player, index) {
+				points += player.score;
+			});
+
+			return points;
 		}
 	},
 	components: {
-		
+		Player
 	}
 }
 </script>
