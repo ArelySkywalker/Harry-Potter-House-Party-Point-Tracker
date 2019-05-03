@@ -2,14 +2,12 @@
   <div id="app">
     <Header />
     <Houses />
-    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Houses from "./components/Houses.vue";
-import Footer from "./components/Footer.vue";
 
 export default {
   name: 'app',
@@ -30,8 +28,7 @@ export default {
   },
   components: {
     Header,
-    Houses,
-    Footer
+    Houses
   }
 }
 </script>

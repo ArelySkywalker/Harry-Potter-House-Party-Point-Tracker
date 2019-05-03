@@ -1,8 +1,8 @@
 <template>
-	<b-container fluid>
-		<b-card-group deck>
+	<b-container fluid class="mb-5">
+		<b-row>
 			<House v-for="house in houses" :house="house" :key="house.name"></House>
-		</b-card-group>
+		</b-row>
 	</b-container>
 </template>
 
@@ -50,7 +50,6 @@ export default {
 					"gif": "https://github.com/ArelySkywalker/HarryPotterHouseParty/blob/master/images/hufflepuff.gif?raw=true"
 				}
 			]
-			
 		}
 	},
 	components: {
