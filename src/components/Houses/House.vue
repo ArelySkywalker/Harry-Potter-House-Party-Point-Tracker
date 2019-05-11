@@ -57,6 +57,6 @@ export default {
 
 <style>
 
-
+.houses .house .card { background: transparent !important; }
 
 </style>

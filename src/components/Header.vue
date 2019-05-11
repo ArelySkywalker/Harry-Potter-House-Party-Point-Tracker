@@ -2,7 +2,8 @@
   <div id="header" class="row">
     <b-col xl="3" lg="6" class="mb-5 user-info">
       <b-card>
-        <p>User Info</p>
+        <p>Username</p>
+        <p>User Role</p>
       </b-card>
     </b-col>
     <b-col xl="6" lg="6" class="mb-5 intro">
@@ -12,7 +13,8 @@
     </b-col>
     <b-col xl="3" lg="6" class="mb-5 ranks">
       <b-card>
-        <p>Ranks</p>
+        <p>Rank out of #n students: { # }</p>
+        <p>Rank out of #n your house: { # }</p>
       </b-card>
     </b-col>
   </div>
@@ -36,6 +38,10 @@ export default {
 
 #header .card {
   background: transparent;
+}
+
+#header .card p {
+  color: rgba(255,255,255,0.4);
 }
 
 #header .user-info .card {
