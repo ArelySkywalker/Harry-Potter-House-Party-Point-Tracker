@@ -1,5 +1,5 @@
 <template>
-	<b-container fluid class="mb-5">
+	<b-container fluid class="mb-5 houses">
 		<b-row>
 			<House v-for="house in houses" :house="house" :key="house.name"></House>
 		</b-row>

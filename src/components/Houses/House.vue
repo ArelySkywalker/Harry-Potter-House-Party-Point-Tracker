@@ -1,5 +1,5 @@
 <template>
-	<b-col xl="3" lg="6" class="mb-5" >
+	<b-col xl="3" lg="6" class="mb-5 house" >
 		<b-card 
 			bg-variant="dark"
 			header="Dark"
@@ -8,7 +8,7 @@
 			:style="{color: house.colors.primary }"
 			lg="6"
 		>
-			<h4 slot="header">{{house.name}}</h4>
+			<h4 slot="header"></h4>
 
 			<b-card-img :src="house.gif" :alt="house.name" top></b-card-img>
 			<b-card-body>

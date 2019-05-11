@@ -38,8 +38,12 @@ export default {
 body,
 html { 
   min-height: 100%;
-  background-color: #111111;
+  background-color: #000000;
   font-size: 16px;
+}
+
+.houses .house .mb-5 {
+  padding: 0;
 }
 
 </style>
