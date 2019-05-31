@@ -3,7 +3,7 @@
 		<md-card
 			bg-variant="dark"
 			header="Dark"
-			class="text-center h-100"
+			class="text-center"
 			no-body
 			:style="{color: house.colors.primary }"
 			lg="6"
@@ -17,11 +17,12 @@
 				<div class="md-subhead">{{housePoints}} Points</div>
 				<div class="md-subhead" :style="{color: this.house.colors.secondary }">{{this.house.players.length}} Members</div>
 			</md-card-header>
-
+		</md-card>
+		<md-card class="house-players">
 			<md-card-content>
-				<ul class="list-unstyled text-left mt-5">
+				<md-list>
 					<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
-				</ul>
+				</md-list>
 			</md-card-content>
 		</md-card>
 	</div>

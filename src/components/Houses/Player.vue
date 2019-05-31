@@ -1,10 +1,11 @@
 <template>
-	<b-media tag="li" class="mb-1">
-		<b-img slot="aside" :src="player.img" width="64" alt="placeholder"></b-img>
-
-		<h5 class="mt-0 mb-1">{{(this.$vnode.key + 1)}}. {{player.name}}</h5>
-		<p>{{player.score}} points</p>
-	</b-media>
+	<md-list-item tag="li" class="mb-1">
+		<md-avatar>
+			<img :src="player.img" width="64" alt="placeholder">
+		</md-avatar>
+		<span class="md-list-item-text">{{(this.$vnode.key + 1)}}. {{player.name}}</span>
+		<span class="md-list-item-text">{{player.score}} points</span>
+	</md-list-item>
 </template>
 
 <script>

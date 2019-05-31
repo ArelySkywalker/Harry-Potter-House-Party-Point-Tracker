@@ -64,7 +64,7 @@ export default {
 				let newPlayer = {
 					name: playerName,
 					score: score,
-					img: 'https://via.placeholder.com/64/?text='+score
+					img: 'https://placeimg.com/40/40/people/'+score
 				}
 
 				players.push(newPlayer);
