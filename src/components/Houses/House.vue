@@ -8,21 +8,21 @@
 			:style="{color: house.colors.primary }"
 			lg="6"
 		>
-		<md-card-media>
-			<img :src="house.gif" :alt="house.name">
-		</md-card-media>
+			<md-card-media>
+				<img :src="house.gif" :alt="house.name">
+			</md-card-media>
 
-		<md-card-header>
-			<div class="md-title">{{house.name}}</div>
-			<div class="md-subhead">{{housePoints}} Points</div>
-			<div class="md-subhead" :style="{color: this.house.colors.secondary }">{{this.house.players.length}} Members</div>
-		</md-card-header>
+			<md-card-header>
+				<div class="md-title">{{house.name}}</div>
+				<div class="md-subhead">{{housePoints}} Points</div>
+				<div class="md-subhead" :style="{color: this.house.colors.secondary }">{{this.house.players.length}} Members</div>
+			</md-card-header>
 
-		<md-card-content>
-			<ul class="list-unstyled text-left mt-5">
-				<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
-			</ul>
-		</md-card-content>
+			<md-card-content>
+				<ul class="list-unstyled text-left mt-5">
+					<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
+				</ul>
+			</md-card-content>
 		</md-card>
 	</div>
 </template>
