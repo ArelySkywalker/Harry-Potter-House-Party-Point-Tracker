@@ -1,6 +1,6 @@
 <template>
-	<b-col xl="3" lg="6" class="mb-5 house" >
-		<b-card 
+	<div xl="3" lg="6" class="md-layout-item house">
+		<md-card
 			bg-variant="dark"
 			header="Dark"
 			class="text-center h-100"
@@ -8,20 +8,23 @@
 			:style="{color: house.colors.primary }"
 			lg="6"
 		>
-			<h4 slot="header"></h4>
+		<md-card-media>
+			<img :src="house.gif" :alt="house.name">
+		</md-card-media>
 
-			<b-card-img :src="house.gif" :alt="house.name" top></b-card-img>
-			<b-card-body>
-				<b-card-title>{{housePoints}} Points</b-card-title>
-				<b-card-text :style="{color: house.colors.secondary }">{{this.house.players.length}} Members</b-card-text>
+		<md-card-header>
+			<div class="md-title">{{house.name}}</div>
+			<div class="md-subhead">{{housePoints}} Points</div>
+			<div class="md-subhead" :style="{color: this.house.colors.secondary }">{{this.house.players.length}} Members</div>
+		</md-card-header>
 
-				<ul class="list-unstyled text-left mt-5">
-					<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
-				</ul>
-			</b-card-body>
-
-		</b-card>
-	</b-col>
+		<md-card-content>
+			<ul class="list-unstyled text-left mt-5">
+				<Player tag="li" v-for="(player, index) in house.players" :player="player" :key="index" ></Player>
+			</ul>
+		</md-card-content>
+		</md-card>
+	</div>
 </template>
 
 <script>

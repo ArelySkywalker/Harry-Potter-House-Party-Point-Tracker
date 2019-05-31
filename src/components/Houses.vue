@@ -1,9 +1,7 @@
 <template>
-	<b-container fluid class="mb-5 houses">
-		<b-row>
+	<div fluid class="md-layout md-gutter houses">
 			<House v-for="house in houses" :house="house" :key="house.name"></House>
-		</b-row>
-	</b-container>
+	</div>
 </template>
 
 <script>
@@ -86,6 +84,6 @@ export default {
 
 <style>
 
-
+.houses { padding: 0 30px; }
 
 </style>

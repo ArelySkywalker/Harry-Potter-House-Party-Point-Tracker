@@ -10,9 +10,13 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+// View Material
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
 
 Vue.use(PortalVue)
 Vue.use(BootstrapVue);
+Vue.use(VueMaterial)
 
 //This event bus is used to track events accross all components without passing every event as a prop
 export const eventBus = new Vue();

@@ -41,7 +41,7 @@ export default {
 }
 
 #header .card p {
-  color: rgba(255,255,255,0.4);
+  color: rgba(0,0,0,0.4);
 }
 
 #header .user-info .card {

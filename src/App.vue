@@ -38,7 +38,7 @@ export default {
 body,
 html { 
   min-height: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
   font-size: 16px;
 }
 
