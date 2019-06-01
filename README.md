@@ -24,11 +24,11 @@ main.js is the main script file that instantiates Vue and other libraries.
 ### Tools and Resources
 
 - [Vue](https://vuejs.org/)
+- [Vue Material](https://vuematerial.io/)
 - [Bootstrap 4](https://getbootstrap.com/)
 - [Bootstrap Vue](https://bootstrap-vue.js.org/)
 - [FontAwesome5](https://fontawesome.com)
 - [Harry Potter Fonts](https://harrypotterfanzone.com/fonts/)
-- [Vue Material](https://vuematerial.io/)
 
 
 ### Notes
