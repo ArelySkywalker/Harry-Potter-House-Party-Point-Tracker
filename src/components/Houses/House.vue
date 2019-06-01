@@ -9,7 +9,7 @@
 			lg="6"
 		>
 			<md-card-media>
-				<img :src="house.gif" :alt="house.name">
+				<img :src="house.png" :alt="house.name">
 			</md-card-media>
 
 			<md-card-header>

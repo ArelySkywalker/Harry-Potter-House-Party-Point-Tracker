@@ -18,6 +18,7 @@ export default {
 						secondary : "#FFC500"
 					},
 					gif: "https://github.com/ArelySkywalker/HarryPotterHouseParty/blob/master/images/gryffindor.gif?raw=true",
+					png: "../images/AllHouses/gryffindor-color.png",
 					players: this.randomPlayers(),
 				},
 				{
@@ -27,6 +28,7 @@ export default {
 						secondary : "#946B2D"
 					},
 					gif: "https://github.com/ArelySkywalker/HarryPotterHouseParty/blob/master/images/ravenclaw.gif?raw=true",
+					png: "../images/AllHouses/ravenclaw-color.png",
 					players: this.randomPlayers(),
 				},
 				{
@@ -36,6 +38,7 @@ export default {
 						secondary : "#AAAAAA"
 					},
 					gif: "https://github.com/ArelySkywalker/HarryPotterHouseParty/blob/master/images/slytherin.gif?raw=true",
+					png: "../images/AllHouses/slytherin-color.png",
 					players: this.randomPlayers(),
 				},
 				{
@@ -45,6 +48,7 @@ export default {
 						secondary : "#000000"
 					},
 					gif: "https://github.com/ArelySkywalker/HarryPotterHouseParty/blob/master/images/hufflepuff.gif?raw=true",
+					png: "../images/AllHouses/hufflepuff-color.png",
 					players: this.randomPlayers(),
 				}
 			]
