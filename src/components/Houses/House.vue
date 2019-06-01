@@ -3,15 +3,16 @@
 		<md-card
 			bg-variant="dark"
 			header="Dark"
-			class="text-center md-elevation-12"
+			class="md-elevation-12 house-logo"
 			no-body
-			:style="{color: house.colors.primary }"
-			lg="6"
 		>
 			<md-card-media>
-				<img :src="house.png" :alt="house.name">
+				<md-ripple>
+					<img :src="house.png" :alt="house.name">
+				</md-ripple>
 			</md-card-media>
-
+		</md-card>
+		<md-card class="house-meta">
 			<md-card-header>
 				<div class="md-title md-display-1">{{house.name}}</div>
 				<div class="md-subhead">{{housePoints}} Points</div>
@@ -61,7 +62,7 @@ export default {
 </script>
 
 <style>
-
-	.houses .house .card { background: transparent !important; }
+	.houses .house-logo 	{ background: rgba(0,0,0,0.1); margin-bottom: 40px; }
+	.houses .house .card 	{ background: transparent !important; }
 
 </style>
