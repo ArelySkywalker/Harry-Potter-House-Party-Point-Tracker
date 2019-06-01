@@ -1,5 +1,5 @@
 <template>
-	<div xl="3" lg="6" class="md-layout-item md-large-size-25 md-medium-size-25 md-small-size-50 md-xsmall-size-100 house">
+	<div xl="3" lg="6" class="md-layout-item md-size-25 md-small-size-50 md-xsmall-size-100 house">
 		<md-card
 			bg-variant="dark"
 			header="Dark"
@@ -13,7 +13,7 @@
 			</md-card-media>
 
 			<md-card-header>
-				<div class="md-title">{{house.name}}</div>
+				<div class="md-title md-display-1">{{house.name}}</div>
 				<div class="md-subhead">{{housePoints}} Points</div>
 				<div class="md-subhead" :style="{color: this.house.colors.secondary }">{{this.house.players.length}} Members</div>
 			</md-card-header>
